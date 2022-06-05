@@ -1,9 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+
+}
+
+#__next{
+  height: 100%;
+
 }
 
 a {
@@ -13,4 +24,157 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.bg-body{
+  background-color: #fafafa;
+}
+
+.bg-ig{
+  background-color: #0095F6;
+}
+
+.text-ig{
+  color: #0095F6;
+}
+
+
+.text-fb{
+  color: #385185;
+}
+
+.login-logo-wrapper{
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  justify-content: center ;
+  align-items: center ;
+
+}
+
+.login-logo{
+  width: 100%;
+  height: 100%;
+  max-width: 175px;
+  max-height: 51px;
+}
+
+
+.f-wrap{
+  flex-wrap: wrap;
+}
+
+.header-width{
+  max-width: 975px;
+  height: 60px;
+}
+
+.header-logo{
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+}
+
+.search-input{
+  background-color: #EFEFEF;
+}
+
+.feed-container{
+  max-width: 821px;
+}
+
+.posts-container{
+  max-width: 470px;
+}
+
+.header-img-wrapper{
+  overflow: hidden;
+  width: 28px;
+  height: 28px;
+
+  border-radius: 100px;
+}
+
+.header-img{
+  width: 100%;
+  height: auto;
+}
+
+.stories-img-wrapper{
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 100px;
+
+}
+
+.story-name{
+  max-width: 80px;
+}
+
+.post-profile-img-wrapper{
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.post-img-wrapper{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+}
+
+
+.sugg-img-wrapper{
+  width:50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.sugg-user-img-wrapper{
+  width:32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.suggestions{
+  max-width: 319px;
+}
+
+
+.chat-img-wrapper{
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+
+
+.general-container{
+  max-width: 975px;
+}
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.profile-pic-wrapper{
+ 
+  overflow: hidden;
+  border-radius: 100px;
 }
