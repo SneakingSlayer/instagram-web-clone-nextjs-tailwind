@@ -7,7 +7,7 @@ const Direct = () => {
   return (
     <>
       <Header />
-      <div className="bg-body w-full h-full flex justify-center pt-20 pb-10 ">
+      <div className="bg-body w-full h-full flex justify-center pt-20 pb-20 ">
         <div className="bg-white border w-full max-w-4xl h-full overflow-auto ">
           <div className="py-2 px-4 border-b flex justify-between items-center">
             <p className="text-sm font-semibold">elephantguy</p>

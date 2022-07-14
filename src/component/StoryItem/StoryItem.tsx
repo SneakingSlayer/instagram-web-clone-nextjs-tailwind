@@ -8,7 +8,7 @@ interface storyItem {
 const StoryItem = (props: storyItem) => {
   return (
     <button className="flex flex-col justify-center items-center">
-      <div className=" stories-img-wrapper outline outline-2 outline-offset-2">
+      <div className=" stories-img-wrapper outline outline-2 outline-offset-2 bg-gray-200">
         <img src={`/profs/${props.img}`} className="stories-img" />
       </div>
       <p className="text-xs mt-2 truncate story-name">{props.name}</p>

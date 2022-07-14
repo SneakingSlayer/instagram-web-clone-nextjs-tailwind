@@ -20,8 +20,11 @@ const Post = () => {
           <BsThreeDots fontSize={20} />
         </button>
       </div>
-      <div className="post-img-wrapper">
-        <img src="/posts/1.jpg" className="post-img" />
+      <div className="post-img-wrapper bg-gray-200">
+        <img
+          src="/posts/1.jpg"
+          className="post-img w-full h-full min-h-[500px] object-cover"
+        />
       </div>
       <div>
         <div className="p-3">
@@ -55,7 +58,7 @@ const Post = () => {
           </div>
           <p className="text-xs text-gray-400">1 hour ago</p>
         </div>
-        <div className="border-t flex justify-between items-center p-2 w-full">
+        <div className="border-t flex flex-wrap justify-between items-center p-2 w-full">
           <button className=" ">
             <HiOutlineEmojiHappy fontSize={28} />
           </button>

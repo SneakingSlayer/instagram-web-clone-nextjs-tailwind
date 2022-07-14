@@ -6,15 +6,7 @@ import { Header } from "../src/component/header/Header";
 import Stories from "../src/component/stories/Stories";
 import Post from "../src/component/Post/Post";
 import Suggestions from "../src/component/Suggestions/Suggestions";
-import { useRouter } from "next/router";
 const Home: NextPage = () => {
-  const router = useRouter();
-  if (typeof window !== "undefined") {
-    if (!localStorage.getItem("token")) {
-      router.push("/login");
-    }
-  }
-
   return (
     <>
       <Header />

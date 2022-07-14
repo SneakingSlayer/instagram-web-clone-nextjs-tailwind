@@ -11,7 +11,7 @@ const T = () => {
   return (
     <>
       <Header />
-      <div className="bg-body w-full h-full flex justify-center pt-20 pb-10">
+      <div className="bg-body w-full h-full flex justify-center pt-20 pb-20 ">
         <div className="bg-white border w-full max-w-4xl flex flex-col h-full">
           <div className=" w-full flex justify-between items-center py-2 px-4 border-b">
             <div className="flex items-center">
