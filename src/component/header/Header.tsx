@@ -205,17 +205,15 @@ export const Header = () => {
                       <div className="w-full">
                         <Menu.Item>
                           {({ active }) => (
-                            <button
-                              onClick={async () => {
-                                await localStorage.clear();
-                                router.push("/login");
-                              }}
-                              className={`${
-                                active && "bg-gray-100   w-full "
-                              } p-1.5 text-sm flex items-center  px-3 ps-3  w-full`}
-                            >
-                              <FaSignOutAlt className="mr-2 text-lg" /> Logout
-                            </button>
+                            <Link href="/login">
+                              <button
+                                className={`${
+                                  active && "bg-gray-100   w-full "
+                                } p-1.5 text-sm flex items-center  px-3 ps-3  w-full`}
+                              >
+                                <FaSignOutAlt className="mr-2 text-lg" /> Logout
+                              </button>
+                            </Link>
                           )}
                         </Menu.Item>
                       </div>
@@ -362,13 +360,15 @@ export const Header = () => {
                     <div className="w-full">
                       <Menu.Item>
                         {({ active }) => (
-                          <button
-                            className={`${
-                              active && "bg-gray-100   w-full "
-                            } p-1.5 text-sm flex items-center  px-3 ps-3  w-full`}
-                          >
-                            <FaSignOutAlt className="mr-2 text-lg" /> Logout
-                          </button>
+                          <Link href="/login">
+                            <button
+                              className={`${
+                                active && "bg-gray-100   w-full "
+                              } p-1.5 text-sm flex items-center  px-3 ps-3  w-full`}
+                            >
+                              <FaSignOutAlt className="mr-2 text-lg" /> Logout
+                            </button>
+                          </Link>
                         )}
                       </Menu.Item>
                     </div>

@@ -37,15 +37,11 @@ const Login = () => {
                     />
                   </div>
                   <div className="space-y-2 flex flex-col w-full">
-                    <button
-                      className="bg-ig font-semibold text-white rounded text-sm p-1 mt-3"
-                      onClick={async () => {
-                        await localStorage.setItem("token", "sample");
-                        router.push("/");
-                      }}
-                    >
-                      Log In
-                    </button>
+                    <Link href="/">
+                      <button className="bg-ig font-semibold text-white rounded text-sm p-1 mt-3">
+                        Log In
+                      </button>
+                    </Link>
                     <div className="py-2 flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
                       <p className="text-center font-semibold mx-4 mb-0 text-gray-400 text-xs">
                         OR
